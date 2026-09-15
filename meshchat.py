@@ -601,7 +601,7 @@ class HackRF:
         candidates = []
         if dll_dir: candidates.append(dll_dir)
         if os.environ.get("HACKRF_DLL_DIR"): candidates.append(os.environ["HACKRF_DLL_DIR"])
-        candidates += [r"C:\Program Files\SDRangel", r"C:\Program Files\PothosSDRin"]
+        candidates += [r"C:\Program Files\SDRangel", r"C:\Program Files\PothosSDR\bin"]
         d = None
         for cdir in candidates:
             for name in ("hackrf.dll", "libhackrf.dll"):
